@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+
+}
+
+body {
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    overflow: hidden;
+    font-family: 'Poppins',
+        sans-serif;
+    background-color: #e5e5e6;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background: url(bg.png);
+    background-size:cover ;
+
+    border-radius: 50px;
+    margin: 10%;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+        rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+        rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    text-align: center;
+    width: 80%;
+    height: 70vh;
+    background-color: #ffffffa9;
+
+}
+
+.container h1 {
+    margin: 5%;
+    color: #ffffff;
+    background: linear-gradient(to right, #0e0d0d53 0, rgba(225, 159, 236, 0.421) 10%, #2c1437 20%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 5s linear infinite;
+    animation-fill-mode: forwards;
+    -webkit-text-size-adjust: none;
+    text-decoration: none;
+    white-space: nowrap;
+    font-size: 60px;
+}
+
+@keyframes shine {
+    0% {
+        background-position: 0;
+    }
+
+    /* 60% {
+        background-position: 500px;
+    } */
+
+    100% {
+        background-position: 600px
+    }
+}
+
+.circle1 {
+    top: 0;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    height: 100%;
+    background-image: linear-gradient(-225deg, #A8BFFF 0%, #884D80 100%);
+    border: 1px solid;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+
+.bubbles {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    transform: translateZ(0);
+}
+
+.bubbles li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    bottom: -100px;
+    background-color: rgba(255, 255, 255, 0.15);
+    animation: square 20s infinite;
+    transition-timing-function: linear;
+}
+
+.bubbles li:nth-child(1) {
+    width: 40px;
+    height: 40px;
+    left: 20%;
+}
+
+.bubbles li:nth-child(2) {
+    width: 60px;
+    height: 60px;
+    left: 40%;
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+    animation-delay: 2s;
+    animation-duration: 17s;
+}
+
+.bubbles li:nth-child(3) {
+    width: 35px;
+    height: 35px;
+    left: 60%;
+
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    animation-delay: 4s;
+    animation-duration: 13s;
+}
+
+.bubbles li:nth-child(4) {
+    width: 30px;
+    height: 30px;
+
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+    left: 80%;
+    animation-delay: 1s;
+    animation-duration: 22s;
+}
+
+.bubbles li:nth-child(5) {
+    width: 50px;
+    height: 50px;
+    left: 80%;
+    animation-delay: 7s;
+    animation-duration: 22s;
+}
+
+.bubbles li:nth-child(6) {
+    width: 50px;
+    height: 50px;
+    left: 80%;
+    animation-delay: 5s;
+    animation-duration: 22s;
+}
+
+.bubbles li:nth-child(7) {
+    width: 50px;
+    height: 50px;
+    left: 50%;
+    animation-delay: 4s;
+    animation-duration: 22s;
+}
+
+.bubbles li:nth-child(8) {
+    width: 40px;
+    height: 40px;
+    left: 50%;
+    animation-delay: 2s;
+    animation-duration: 22s;
+}
+
+.bubbles li:nth-child(9) {
+    width: 50px;
+    height: 50px;
+    left: 80%;
+    animation-delay: 2s;
+    animation-duration: 22s;
+}
+
+.bubbles li:nth-child(10) {
+    width: 50px;
+    height: 50px;
+    left: 80%;
+    animation-delay: 2s;
+    animation-duration: 22s;
+}
+
+.bubbles li:nth-child(11) {
+    width: 50px;
+    height: 50px;
+    left: 10%;
+    animation-delay: 2s;
+    animation-duration: 22s;
+}
+
+@keyframes square {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    100% {
+        -webkit-transform: translateY(-1080px) rotate(630deg);
+        transform: translateY(-1080px) rotate(630deg);
+    }
+}
+
+/* CSS */
+.button-55 {
+    align-self: center;
+    background-color: #fff;
+    background-image: none;
+    background-position: 0 90%;
+    background-repeat: repeat no-repeat;
+    background-size: 4px 3px;
+    border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+    border-style: solid;
+    border-width: 2px;
+    box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+    box-sizing: border-box;
+    color: #41403e;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Neucha, sans-serif;
+    font-size: 1rem;
+    line-height: 23px;
+    outline: none;
+    padding: .75rem;
+    text-decoration: none;
+    transition: all 235ms ease-in-out;
+    border-bottom-left-radius: 15px 255px;
+    border-bottom-right-radius: 225px 15px;
+    border-top-left-radius: 255px 15px;
+    border-top-right-radius: 15px 225px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-55:hover {
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+    transform: translate3d(0, 2px, 0);
+    background-color: rgb(46, 34, 46);
+    color: white;
+}
+
+.button-55:focus {
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+}
+
+
+
+a{
+    text-decoration: none;
+    
+}
+a:hover{
+    color: white;
+}
+
+
+
+
+
+
+
+@media (max-width:577px) {
+  
+}
+
+
+
+
+
+
+@media (max-width:1279px) and (min-width:769px) {
+
+    .words span {
+        font-size: 3rem;
+
+    }
+
+    .header-text {
+        font-size: 2rem !important;
+        margin-top: 50px;
+    }
+
+    body {
+        overflow: auto;
+        background-color: #2c1437;
+    }
+
+    p {
+        font-size: 1.2rem !important;
+    }
+
+    .button {
+        font-size: 1.5rem;
+    }
+
+}
+
+
+
+
+@media (max-width:768px) and (min-width:481px) {
+    .words span {
+        font-size: 2.5rem;
+
+    }
+
+    .header-text {
+        font-size: 2rem !important;
+    }
+
+    body {
+        overflow: auto;
+        background-color: #2c1437;
+    }
+
+    p {
+        font-size: 0.85rem !important;
+    }
+
+}
+
+
+
+
+@media (max-width:480px) {
+    .words span {
+        font-size: 2.5rem;
+
+    }
+
+
+    .fade-in-text,h1 {
+        font-size: 20px !important;
+
+    }
+
+    .button-55{
+        margin-top: 50px;
+    }
+
+    .container{
+        margin-top: 150px;
+        width: 80%;
+        height: 50vh;
+
+    }
+}

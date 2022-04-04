@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="styling/welcom.css">
+</head>
+
+<body>
+    <div class="circle1">
+        <ul class="bubbles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            
+        </ul>
+    </div>
+    
+   
+    <div class="container">
+        <h1 id="fullName" class="btn-shine" ></h1>
+        <button class="button-55" role="button"><a href="http://127.0.0.1:5500/jsProject/quiz.html">Start Quiz</a> </button>
+
+  
+    </div>
+    <script>
+       document.getElementById("fullName").innerHTML = `Welcome ${localStorage.getItem("fullName")}`;
+        
+    </script>
+</body>
+
+</html>
