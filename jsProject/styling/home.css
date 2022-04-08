@@ -17,12 +17,13 @@ body {
     background-color: #2c1437;
 }
 
-.About{
+.About {
     margin: 2% 15% 0% 15%;
-    /* background: #dcd8eb33; */   
+    /* background: #dcd8eb33; */
     border-radius: 15px;
     background-color: #a38cee0f;
 }
+
 p {
     margin: 50%;
     justify-content: center;
@@ -36,17 +37,16 @@ p {
     margin-inline-end: 0px;
     color: #ffffff;
     letter-spacing: 1px;
-    line-height: 30px;
-    
-    
+    line-height: 50px;
 }
 
-.fade-in-text , h1 {
+.fade-in-text,
+h1 {
     display: inline-block;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 50px;
     color: rgb(255, 255, 255);
-    animation: fadeIn linear 9s;
+    animation: fadeIn linear 10s;
     -webkit-animation: fadeIn linear 9s;
     -moz-animation: fadeIn linear 9s;
     -o-animation: fadeIn linear 9s;
@@ -100,10 +100,11 @@ p {
     font-size: 0;
     line-height: 0.5;
     margin-top: 50px;
+
 }
 
 .words span {
-    font-size: 5rem;
+    font-size: 4rem;
     display: inline-block;
     animation: move 5s linear infinite;
 }
@@ -202,17 +203,11 @@ p {
     padding-bottom: 2rem;
 }
 
-.btn {
-    background: #a38cee;
-    box-shadow: #dcd8eb 10px;
-    color: white;
-    font-size: 1.2rem;
-    padding: 1rem 2rem;
+a {
     text-decoration: none;
-    border-radius: 20px;
 }
 
-/* < !-- HTML !--><button class="button-73"role="button">Button 73</button> */
+
 
 /* CSS */
 .button {
@@ -239,6 +234,7 @@ p {
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
+    font-size: 1rem;
 }
 
 .button:hover {
@@ -251,23 +247,25 @@ p {
     transform: scale(1.025);
 }
 
-
- .header-text{
+.header-text {
     font-size: 2rem !important;
 }
-body{
+
+body {
     overflow: auto;
     background-color: #2c1437;
 }
-p{
+
+p {
     font-size: 1rem !important;
 }
-.button{
-    font-size: 1rem;
-}
+
+
 
 
 @media (max-width:1279px) and (min-width:769px) {
+
+
     .button {
         font-size: 1.5rem;
         padding: .75rem 2rem;
@@ -279,7 +277,7 @@ p{
     }
 
     .header-text {
-        font-size: 2rem !important;
+        font-size: 3rem !important;
         margin-top: 50px;
     }
 
@@ -289,7 +287,10 @@ p{
     }
 
     p {
-        font-size: 1.2rem !important;
+
+        font-size: 1.85rem !important;
+        line-height: 70px;
+
     }
 
     .button {
@@ -301,12 +302,12 @@ p{
 
 @media (max-width:768px) and (min-width:481px) {
     .words span {
-        font-size: 2.5rem;
+        font-size: 4.5rem;
 
     }
 
     .header-text {
-        font-size: 2rem !important;
+        font-size: 3.5rem !important;
     }
 
     body {
@@ -315,12 +316,14 @@ p{
     }
 
     p {
-        font-size: 0.85rem !important;
+        font-size: 1.85rem !important;
+        line-height: 50px;
     }
 
     .button {
-        font-size: 0.8rem;
+        font-size: 1.8rem;
     }
+
 }
 
 
@@ -331,14 +334,20 @@ p{
     }
 
 
-    .fade-in-text,h1 {
+    .fade-in-text,
+    h1 {
         font-size: 10px !important;
 
     }
 
+    .button {
+        font-size: 0.7rem;
+    }
 
-}
+    p {
+        /* font-size: 1.85rem !important; */
+        line-height: 27px;
+    }
 
-a{
-    text-decoration: none;
+
 }
