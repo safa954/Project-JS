@@ -9,8 +9,6 @@
 
 body {
     display: flex;
-    /* justify-content: center; */
-    /* align-items: center; */
     overflow: hidden;
     font-family: 'Poppins',
         sans-serif;
@@ -21,7 +19,7 @@ body {
     display: flex;
     flex-direction: column;
     background: url(bg.png);
-    background-size:cover ;
+    background-size: cover;
 
     border-radius: 50px;
     margin: 10%;
@@ -242,11 +240,12 @@ body {
 
 
 
-a{
+a {
     text-decoration: none;
-    
+
 }
-a:hover{
+
+a:hover {
     color: white;
 }
 
@@ -256,9 +255,6 @@ a:hover{
 
 
 
-@media (max-width:577px) {
-  
-}
 
 
 
@@ -279,7 +275,7 @@ a:hover{
 
     body {
         overflow: auto;
-        background-color: #2c1437;
+
     }
 
     p {
@@ -290,55 +286,61 @@ a:hover{
         font-size: 1.5rem;
     }
 
+
 }
 
 
 
 
 @media (max-width:768px) and (min-width:481px) {
-    .words span {
-        font-size: 2.5rem;
 
-    }
 
-    .header-text {
+    .header-text,
+    h1 {
         font-size: 2rem !important;
     }
 
     body {
         overflow: auto;
-        background-color: #2c1437;
+
     }
 
     p {
         font-size: 0.85rem !important;
     }
-
+        
+    
 }
 
 
 
 
 @media (max-width:480px) {
-    .words span {
-        font-size: 2.5rem;
+
+
+
+    .fade-in-text,
+    h1 {
+        font-size: 1rem !important;
+        padding-top: 20px;
 
     }
 
-
-    .fade-in-text,h1 {
-        font-size: 20px !important;
-
-    }
-
-    .button-55{
+    .button-55 {
         margin-top: 50px;
     }
 
-    .container{
+    .container {
         margin-top: 150px;
         width: 80%;
         height: 50vh;
 
+    }
+
+    .description {
+        font-size: 0.85rem !important;
+    }
+    .button-55 {
+        margin-top: 20px;
     }
 }
