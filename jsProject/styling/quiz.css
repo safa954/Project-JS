@@ -258,7 +258,7 @@ button {
 }
 
 #sectionTest {
-    font-size: 60px;
+    font-size: 50px;
     color: white;
     padding: 27%;
 
@@ -297,8 +297,12 @@ a {
   
   
     #sectionTest {
-      font-size: 35px;
+      font-size: 1.3rem;
   
+    }
+    #sectionTest span {
+    
+      font-size: 1rem
     }
   
   
@@ -346,6 +350,10 @@ a {
       font-size: 25px;
   
     }
+    #sectionTest span {
+    
+      font-size: 1rem
+    }
   
     button {
       top: 65%;
@@ -382,10 +390,13 @@ a {
   
   
     #sectionTest {
-      font-size: 20px;
+      font-size:1.2rem;
   
     }
-  
+  #sectionTest span{
+    
+    font-size:1rem
+  }
     button {
       top: 80%;
     }
